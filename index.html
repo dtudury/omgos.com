@@ -4,5 +4,23 @@
     </HEAD>
     <BODY>
         Hello World!
+        <script>
+function loadRoute(service, id, callback) {   
+    var xobj = new XMLHttpRequest();
+    //xobj.overrideMimeType("application/json");
+    xobj.open('GET', service + "/" +  id + "/route.json", true);
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            callback(JSON.parse(xobj.responseText));
+        }
+    };
+    xobj.send(null);  
+}
+
+loadRoute("strava", "411095325", function (data) {
+    window.d = data;
+    console.log(data);
+});
+        </script>
     </BODY>
 </HTML>

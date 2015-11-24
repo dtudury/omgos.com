@@ -1,0 +1,24 @@
+{
+  "name": "omgos.com",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "adm-zip": "^0.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtudury/omgos.com.git"
+  },
+  "author": "David Tudury <david.tudury@gmail.com> (http://nacl.im/dtudury)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtudury/omgos.com/issues"
+  },
+  "homepage": "https://github.com/dtudury/omgos.com"
+}
